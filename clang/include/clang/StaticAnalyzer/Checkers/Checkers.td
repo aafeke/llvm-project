@@ -126,6 +126,10 @@ def WebKitAlpha : Package<"webkit">, ParentPackage<Alpha>;
 
 let ParentPackage = Core in {
 
+def TestChecker : Checker<"Test">,
+  HelpText<"Test Checker">,
+  Documentation<NotDocumented>;
+
 def CallAndMessageModeling : Checker<"CallAndMessageModeling">,
   HelpText<"Responsible for essential modeling and assumptions after a "
            "function/method call. For instance, if we can't reason about the "
